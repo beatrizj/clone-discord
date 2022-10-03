@@ -1,0 +1,27 @@
+import React from 'react'
+
+import { Grid } from './styles'
+
+import ServerList from '../ServerList'
+import ServerName from '../ServerName'
+import ChannelInfo from '../ChannelInfo'
+
+//Exportar com Javascript
+/* export default function() {
+  return (
+    <div>Ciao!</div>
+  )
+} */
+
+//Exportar com Typescript
+const Layout: React.FC = () => {
+  return (
+    <Grid>
+      <ServerList />
+      <ServerName />
+      <ChannelInfo />
+    </Grid>
+  )
+}
+
+export default Layout
